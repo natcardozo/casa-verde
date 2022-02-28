@@ -3,24 +3,23 @@
     height: 100%;
 
     position: absolute;
-    top: 0;
+    top: -100vh;
     right: 0;
 
-    z-index: 0;
-
-    opacity: 0;
+    z-index: -100;
     
     transition: .25s;
+
+    overflow: scroll;
 }
 
 .carrinho--ativo {
     z-index: 100;
-
-    opacity: 1;
     
     transition: .25s;
 
     position: fixed;
+    top: 0;
 }
 
 .carrinho__background--fixed {
@@ -33,14 +32,14 @@
     display: inline-flex;
     align-items: center;
 
-    padding: 0 1rem;
+    padding-bottom: 2rem;
 }
 
 .carrinho__produtos {
     display: flex;
     flex-direction: column;
 
-    padding: 1.5rem 1rem;
+    padding-bottom: 2rem;
 }
 
 .carrinho__produtos--item {
@@ -48,9 +47,93 @@
     flex-direction: row;
     align-items: center;
 
-    border-bottom: 1px solid var(--cinza);
+    padding-bottom: 1.5rem;
+
+    margin-bottom: 1.5rem;
+
+    border-bottom: 1px solid var(--preto-transparente);
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    font-size: var(--tamanho-corpo);
+    font-weight: var(--peso-carrinho);
 }
 
 .carrinho__produtos--imagem {
     width: 52px;
+    height: 52px;
+    object-fit: cover;
+}
+
+.carrinho__produtos--info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    color: var(--preto);
+
+    margin-bottom: 1rem;
+}
+
+.carrinho__produtos--valor {
+    display: flex;
+    flex-direction: row;
+    
+    color: var(--cinza);
+}
+
+.carrinho__produtos--quantidade {
+    display: flex;
+    flex-direction: row;
+
+    position: absolute;
+    right: 1.375rem;
+}
+
+.carrinho__produtos--quantidade img {
+    margin-left: .5rem;
+}
+
+.carrinho__tabela {
+    margin-bottom: 2rem;
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+
+    font-size: var(--tamanho-corpo);
+    font-weight: var(--peso-carrinho);
+    color: var(--cinza);
+}
+
+.carrinho__tabela p {
+    margin-bottom: 1.375rem;
+}
+
+.tabela__info {
+    width: 70%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.tabela__valor {
+    width: 30%;
+
+    display: flex;
+    flex-direction: column;
+    
+    text-align: end;
+}
+
+.info__subtotal {
+    color: var(--preto);
+}
+
+.body--fade {
+    opacity: .7;
 }

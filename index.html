@@ -19,7 +19,8 @@
     <link rel="stylesheet" href="assets/css/componentes/video.css">
     <link rel="stylesheet" href="assets/css/componentes/rodape.css">
 </head>
-<body id="body">
+<body class="body">
+    <div class="fundo-escuro"></div>
     <header class="container cabecalho">
         <img src="assets/img/logo.svg" alt="Logotipo da Casa Verde" class="cabecalho__logo">
         <img src="assets/img/icones/carrinho.svg" alt="Ícone do carrinho de compras" class="cabecalho__carrinho">
@@ -34,48 +35,64 @@
                 <li class="carrinho__produtos--item">
                     <img src="assets/img/produto-01.png" alt="Foto do produto" class="carrinho__produtos--imagem">
                     <div>
-                        <h4>Cordyline fruticosa</h4>
-                        <button class="carrinho__botao-fechar"><img src="assets/img/icones/fechar.svg" alt="Botão de fechar"></button>
-                        <p>R$ 20,00</p>
-                        <p>1 qtd</p>
-                        <img src="assets/img/icones/chevron.svg" alt="Botão de dropdown">
+                        <div class="carrinho__produtos--info">
+                            <h4>Ajuga reptans</h4>
+                            <button class="carrinho__botao-fechar"><img src="assets/img/icones/fechar.svg" alt="Botão de fechar"></button>
+                        </div>
+                        <div class="carrinho__produtos--valor">
+                            <p>R$ 20,00</p>
+                            <div class="carrinho__produtos--quantidade">
+                                <p>1 qtd</p>
+                                <img src="assets/img/icones/chevron.svg" alt="Botão de dropdown">
+                            </div>
+                        </div>
                     </div>
                 </li>
                 <li class="carrinho__produtos--item">
-                    <img src="assets/img/produto-01.png" alt="Foto do produto" class="carrinho__produtos--imagem">
+                    <img src="assets/img/produto-02.png" alt="Foto do produto" class="carrinho__produtos--imagem">
                     <div>
-                        <h4>Cordyline fruticosa</h4>
-                        <button class="carrinho__botao-fechar"><img src="assets/img/icones/fechar.svg" alt="Botão de fechar"></button>
-                        <p>R$ 20,00</p>
-                        <p>1 qtd</p>
-                        <img src="assets/img/icones/chevron.svg" alt="Botão de dropdown">
+                        <div class="carrinho__produtos--info">
+                            <h4>Cordyline fruticosa</h4>
+                            <button class="carrinho__botao-fechar"><img src="assets/img/icones/fechar.svg" alt="Botão de fechar"></button>
+                        </div>
+                        <div class="carrinho__produtos--valor">
+                            <p>R$ 20,00</p>
+                            <div class="carrinho__produtos--quantidade">
+                                <p>1 qtd</p>
+                                <img src="assets/img/icones/chevron.svg" alt="Botão de dropdown">
+                            </div>
+                        </div>
                     </div>
                 </li>
                 <li class="carrinho__produtos--item">
-                    <img src="assets/img/produto-01.png" alt="Foto do produto" class="carrinho__produtos--imagem">
+                    <img src="assets/img/produto-03.png" alt="Foto do produto" class="carrinho__produtos--imagem">
                     <div>
-                        <h4>Cordyline fruticosa</h4>
-                        <button class="carrinho__botao-fechar"><img src="assets/img/icones/fechar.svg" alt="Botão de fechar"></button>
-                        <p>R$ 20,00</p>
-                        <p>1 qtd</p>
-                        <img src="assets/img/icones/chevron.svg" alt="Botão de dropdown">
+                        <div class="carrinho__produtos--info">
+                            <h4>Crassula ovata</h4>
+                            <button class="carrinho__botao-fechar"><img src="assets/img/icones/fechar.svg" alt="Botão de fechar"></button>
+                        </div>
+                        <div class="carrinho__produtos--valor">
+                            <p>R$ 20,00</p>
+                            <div class="carrinho__produtos--quantidade">
+                                <p>1 qtd</p>
+                                <img src="assets/img/icones/chevron.svg" alt="Botão de dropdown">
+                            </div>
+                        </div>
                     </div>
                 </li>
             </ul>
-            <table>
-                <tr>
-                    <td>Valor dos produtos</td>
-                    <td>R$60,00</td>
-                </tr>
-                <tr>
-                    <td>Taxa de entrega</td>
-                    <td>R$10,00</td>
-                </tr>
-                <tfoot>
-                    <td>Subtotal</td>
-                    <td>R$70,00</td>
-                </tfoot>
-            </table>
+            <article class="carrinho__tabela">
+                <div class="tabela__info">
+                    <p>Valor dos produtos</p>
+                    <p>Subtotal</p>
+                    <p class="info__subtotal">Taxa de entrega</p>
+                </div>
+                <div class="tabela__valor">
+                    <p>R$ 60,00</p>
+                    <p>R$ 10,00</p>
+                    <p class="info__subtotal">R$ 70,00</p>
+                </div>
+            </article>
             <button class="botao">Finalizar compra</button>
         </section>
         <section class="chamada container">
