@@ -24,3 +24,14 @@
 
     border: 1px solid var(--amarelo);
 }
+
+.carrinho__botao-fechar {
+    position: absolute;
+    right: 1rem;
+
+    background-color: unset;
+
+    width: auto;
+
+    border: none;
+}

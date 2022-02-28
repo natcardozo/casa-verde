@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@900&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/base/base.css">
     <link rel="stylesheet" href="assets/css/componentes/cabecalho.css">
+    <link rel="stylesheet" href="assets/css/carrinho.css">
     <link rel="stylesheet" href="assets/css/componentes/input.css">
     <link rel="stylesheet" href="assets/css/componentes/botoes.css">
     <link rel="stylesheet" href="assets/css/chamada.css">
@@ -18,14 +19,65 @@
     <link rel="stylesheet" href="assets/css/componentes/video.css">
     <link rel="stylesheet" href="assets/css/componentes/rodape.css">
 </head>
-<body>
+<body id="body">
     <header class="container cabecalho">
         <img src="assets/img/logo.svg" alt="Logotipo da Casa Verde" class="cabecalho__logo">
-        <a href="#" aria-label="Meu carrinho de compras">
-            <img src="assets/img/icones/carrinho.svg" alt="Ícone do carrinho de compras" class="cabecalho__carrinho">
-        </a>
+        <img src="assets/img/icones/carrinho.svg" alt="Ícone do carrinho de compras" class="cabecalho__carrinho">
     </header>
     <main>
+        <section class="carrinho cartao container">
+            <div class="carrinho__header">
+                <h3 class="titulo--destaque">Meu carrinho</h3>
+                <button class="carrinho__botao-fechar carrinho__botao-fechar--ativo"><img src="assets/img/icones/fechar.svg" alt="Botão de fechar"></button>
+            </div>
+            <ul class="carrinho__produtos">
+                <li class="carrinho__produtos--item">
+                    <img src="assets/img/produto-01.png" alt="Foto do produto" class="carrinho__produtos--imagem">
+                    <div>
+                        <h4>Cordyline fruticosa</h4>
+                        <button class="carrinho__botao-fechar"><img src="assets/img/icones/fechar.svg" alt="Botão de fechar"></button>
+                        <p>R$ 20,00</p>
+                        <p>1 qtd</p>
+                        <img src="assets/img/icones/chevron.svg" alt="Botão de dropdown">
+                    </div>
+                </li>
+                <li class="carrinho__produtos--item">
+                    <img src="assets/img/produto-01.png" alt="Foto do produto" class="carrinho__produtos--imagem">
+                    <div>
+                        <h4>Cordyline fruticosa</h4>
+                        <button class="carrinho__botao-fechar"><img src="assets/img/icones/fechar.svg" alt="Botão de fechar"></button>
+                        <p>R$ 20,00</p>
+                        <p>1 qtd</p>
+                        <img src="assets/img/icones/chevron.svg" alt="Botão de dropdown">
+                    </div>
+                </li>
+                <li class="carrinho__produtos--item">
+                    <img src="assets/img/produto-01.png" alt="Foto do produto" class="carrinho__produtos--imagem">
+                    <div>
+                        <h4>Cordyline fruticosa</h4>
+                        <button class="carrinho__botao-fechar"><img src="assets/img/icones/fechar.svg" alt="Botão de fechar"></button>
+                        <p>R$ 20,00</p>
+                        <p>1 qtd</p>
+                        <img src="assets/img/icones/chevron.svg" alt="Botão de dropdown">
+                    </div>
+                </li>
+            </ul>
+            <table>
+                <tr>
+                    <td>Valor dos produtos</td>
+                    <td>R$60,00</td>
+                </tr>
+                <tr>
+                    <td>Taxa de entrega</td>
+                    <td>R$10,00</td>
+                </tr>
+                <tfoot>
+                    <td>Subtotal</td>
+                    <td>R$70,00</td>
+                </tfoot>
+            </table>
+            <button class="botao">Finalizar compra</button>
+        </section>
         <section class="chamada container">
             <h2 class="titulo">
                 Sua casa com as
@@ -167,5 +219,6 @@
             Telefone: (11) 99875-2201
         </address>
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>
