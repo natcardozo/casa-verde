@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="assets/css/componentes/rodape.css">
 </head>
 <body class="body">
+    <div class="fundo-escuro"></div>
     <header class="container cabecalho">
         <img src="assets/img/logo.svg" alt="Logotipo da Casa Verde" class="cabecalho__logo" onclick="location.href='index.html'">
     </header>
@@ -115,8 +116,16 @@
                 </div>
                 <input type="text" class="input" placeholder="CPF do titular" aria-label="CPF do titular">
                 <input type="text" class="input" placeholder="Número de parcelas" aria-label="Número de parcelas">
-                <button class="botao">Finalizar compra</button>
             </form>
+            <button class="botao__finalizar botao">Finalizar compra</button>
+        </section>
+        <section class="container modal">
+            <div class="modal__cartao cartao container">
+                <img src="assets/img/modal.png" alt="Mulher regando planta" class="modal__imagem">
+                <h3 class="titulo--destaque alinhamento--meio">Pedido concluído com sucesso</h3>
+                <p class="modal__texto texto alinhamento--meio">Seu pedido foi efetuado com sucesso. Fique de olho no seu e-mail que você receberá uma mensagem com os detalhes da sua compra. Seu pedido chegará em sua casa em até 7 dias úteis.</p>
+                <button class="botao" onclick="location.href='index.html'">Voltar para a tela inicial</button>
+            </div>
         </section>
     </main>
     <footer class="container rodape">
@@ -139,6 +148,6 @@
             Telefone: (11) 99875-2201
         </address>
     </footer>
-    <script src="index.js"></script>
+    <script src="resumo.js"></script>
 </body>
 </html>

@@ -29,3 +29,49 @@
     grid-template-columns: auto auto;
     grid-gap: 1rem;
 }
+
+.modal {
+    padding-top: 4rem;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: -100;
+
+    opacity: 0;
+}
+
+.modal--ativo {
+    z-index: 100;
+
+    opacity: 1;
+
+    position: fixed;
+}
+
+.modal__cartao {
+    background-image: url(../../assets/img/splash-modal.svg);
+    background-position: top right;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.modal__imagem {
+    width: 185px;
+
+    margin: 0 auto;
+
+    padding-bottom: 2.5rem;
+}
+
+.modal__texto {
+    font-size: var(--tamanho-corpo);
+    font-weight: var(--peso-corpo);
+
+    padding-top: 1rem;
+    padding-bottom: 2.5rem;
+}
