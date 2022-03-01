@@ -4,10 +4,23 @@
     align-items: flex-end;
 
     box-sizing: border-box;
+
+    margin-bottom: 2rem;
+
+    z-index: 50;
     
     width: 100%;
     padding-top: .75rem;
-    padding-bottom: .75rem;
+    padding-bottom: 1rem;
+
+    position: sticky;
+    float: left;
+    left: 0;
+    top: 0;
+
+    background-color: var(--branco);
+
+    box-shadow: 10px 10px 30px var(--preto-transparente);
 }
 
 .cabecalho__logo {

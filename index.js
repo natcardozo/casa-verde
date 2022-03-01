@@ -12,3 +12,10 @@ botaoFechar.addEventListener('click', () => {
     carrinho.classList.toggle('carrinho--ativo')
     body.classList.toggle('fundo-escuro--ativo')
 })
+
+const cabecalho = document.querySelector(".cabecalho");
+const bodyScroll = document.querySelector(".body");
+
+bodyScroll.addEventListener('scroll', (e) => {
+    cabecalho.classList.toggle('cabecalho--scroll')
+})
