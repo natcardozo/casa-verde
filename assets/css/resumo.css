@@ -1,0 +1,31 @@
+.carrinho--resumo {
+    position: static;
+
+    z-index: 100;
+
+    overflow: scroll;
+
+    width: calc(100% - 2rem);
+
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1.625rem;
+}
+
+.botao-fechar--resumo {
+    right: 2rem;
+}
+
+.resumo__finalizar {
+    margin-bottom: 5rem;
+}
+
+.resumo__form {
+    margin-bottom: 5rem;
+}
+
+.resumo__form--div {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 1rem;
+}

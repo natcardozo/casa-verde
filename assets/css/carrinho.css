@@ -6,6 +6,8 @@
     top: -100vh;
     right: 0;
 
+    margin-bottom: 5rem;
+
     z-index: -100;
     
     transition: .25s;
@@ -16,6 +18,8 @@
 .carrinho--ativo {
     z-index: 100;
     
+    margin-bottom: 0;
+
     transition: .25s;
 
     position: fixed;
@@ -90,6 +94,10 @@
 
     position: absolute;
     right: 1.375rem;
+}
+
+.quantidade--resumo {
+    right: 2.375rem;
 }
 
 .carrinho__produtos--quantidade img {

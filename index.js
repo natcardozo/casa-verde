@@ -1,6 +1,6 @@
 const botaoCarrinho = document.querySelector(".cabecalho__carrinho");
 const botaoFechar = document.querySelector(".carrinho__botao-fechar--ativo");
-const carrinho = document.querySelector(".carrinho");
+const carrinho = document.querySelector("#carrinho");
 const body = document.querySelector(".fundo-escuro");
 
 botaoCarrinho.addEventListener('click', () => {
