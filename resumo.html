@@ -99,13 +99,13 @@
                 <input type="text" class="input" placeholder="Nome" aria-label="Nome">
                 <input type="email" class="input" placeholder="E-mail" aria-label="E-mail">
                 <lable class="texto">Endereço de entrega</lable>
-                <input type="text" class="input" placeholder="CEP" aria-label="CEP">
-                <input type="text" class="input" placeholder="Rua / Avenida" aria-label="Logradouro">
+                <input type="number" class="input input--cep" placeholder="CEP" aria-label="CEP" onchange="buscaCEP()">
+                <input type="text" class="input input--logradouro" placeholder="Rua / Avenida" aria-label="Logradouro">
                 <div class="resumo__form--div">
                     <input type="text" class="input" placeholder="Número" aria-label="Número">
                     <input type="text" class="input" placeholder="Complemento" aria-label="Complemento">
-                    <input type="text" class="input" placeholder="Cidade" aria-label="Cidade">
-                    <input type="text" class="input" placeholder="Estado" aria-label="Estado">
+                    <input type="text" class="input input--cidade" placeholder="Cidade" aria-label="Cidade">
+                    <input type="text" class="input input--estado" placeholder="Estado" aria-label="Estado">
                 </div>
                 <lable class="texto">Pagamento</lable>
                 <input type="text" class="input" placeholder="Número do cartão" aria-label="Número do cartão">
