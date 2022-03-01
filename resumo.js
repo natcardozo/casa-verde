@@ -13,7 +13,7 @@ let botaoCEP = document.querySelector(".botao--cep")
 botaoCEP.addEventListener('click', function buscaCEP() {
     let cep = document.querySelector(".input--cep");
     let valorCEP = cep.value;
-    let url = 'http://viacep.com.br/ws/' + valorCEP + '/json'
+    let url = 'https://viacep.com.br/ws/' + valorCEP + '/json'
     let xhr = new XMLHttpRequest(); 
     
     xhr.open('GET', url, true);
