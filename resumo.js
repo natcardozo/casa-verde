@@ -8,7 +8,9 @@ botaoFinalizar.addEventListener('click', (e) => {
     fundoEscuro.classList.toggle('fundo-escuro--ativo');
 })
 
-function buscaCEP() {
+let botaoCEP = document.querySelector(".botao--cep")
+
+botaoCEP.addEventListener('click', function buscaCEP() {
     let cep = document.querySelector(".input--cep");
     let valorCEP = cep.value;
     let url = 'http://viacep.com.br/ws/' + valorCEP + '/json'
@@ -20,7 +22,7 @@ function buscaCEP() {
         if (xhr.status = 200) preencheCampos(JSON.parse(xhr.responseText)); } 
     } 
     xhr.send();
-}
+})
 
 function preencheCampos(json) { 
     let logradouro = document.querySelector(".input--logradouro");
