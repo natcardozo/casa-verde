@@ -40,6 +40,7 @@ body {
 
 .texto {
     line-height: 26px;
+    color: var(--cinza);
 }
 
 .fundo-escuro {
@@ -56,7 +57,29 @@ body {
     opacity: 0;
 }
 
+.snackbar__fundo-escuro {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: -100;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: var(--preto);
+    opacity: 0;
+}
+
 .fundo-escuro--ativo {
+    z-index: 50;
+
+    opacity: 0.7;
+
+    position: fixed;
+}
+
+.snackbar__fundo-escuro--ativo{
     z-index: 50;
 
     opacity: 0.7;

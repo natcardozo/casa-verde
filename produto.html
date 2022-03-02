@@ -3,26 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Casa Verde</title>
+    <title>Cordyline fruticosa | Casa Verde</title>
     <link href="https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@900&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/base/base.css">
     <link rel="stylesheet" href="assets/css/componentes/cabecalho.css">
-    <link rel="stylesheet" href="assets/css/carrinho.css">
-    <link rel="stylesheet" href="assets/css/componentes/input.css">
-    <link rel="stylesheet" href="assets/css/componentes/botoes.css">
-    <link rel="stylesheet" href="assets/css/chamada.css">
     <link rel="stylesheet" href="assets/css/componentes/cartao.css">
-    <link rel="stylesheet" href="assets/css/componentes/item.css">
-    <link rel="stylesheet" href="assets/css/como-conseguir.css">
-    <link rel="stylesheet" href="assets/css/componentes/produto.css">
+    <link rel="stylesheet" href="assets/css/carrinho.css">
+    <link rel="stylesheet" href="assets/css/componentes/botoes.css">
+    <link rel="stylesheet" href="assets/css/pagina-produto.css">
     <link rel="stylesheet" href="assets/css/ofertas.css">
-    <link rel="stylesheet" href="assets/css/componentes/video.css">
+    <link rel="stylesheet" href="assets/css/componentes/produto.css">
     <link rel="stylesheet" href="assets/css/componentes/rodape.css">
 </head>
-<body class="body">
+<body>
     <div class="fundo-escuro"></div>
+    <div class="snackbar__fundo-escuro"></div>
     <header class="container cabecalho">
-        <img src="assets/img/logo.svg" alt="Logotipo da Casa Verde" class="cabecalho__logo">
+        <img src="assets/img/logo.svg" alt="Logotipo da Casa Verde" class="cabecalho__logo" onclick="location.href='index.html'">
         <img src="assets/img/icones/carrinho.svg" alt="Ícone do carrinho de compras" class="cabecalho__carrinho">
     </header>
     <main>
@@ -95,46 +92,27 @@
             </article>
             <button class="botao" onclick="location.href='resumo.html'">Finalizar compra</button>
         </section>
-        <section class="chamada container">
-            <h2 class="titulo">
-                Sua casa com as
-                <span class="titulo--destaque">melhores plantas</span>
-            </h2>
-            <p class="chamada__texto texto">
-                Encontre aqui uma vasta seleção de plantas para decorar a sua casa e torná-lo uma pessoa mais feliz no seu dia a dia. Entre com seu e-mail e assine nossa newsletter para saber das novidades da marca.
+        <section class="pagina-produto container">
+            <h2 class="titulo--destaque">Cordyline fruticosa</h2>
+            <p class="pagina-produto__texto texto">R$ 20,00</p>
+            <p class="pagina-produto__texto texto">
+                Sed arcu risus, posuere viverra imperdiet eu, commodo interdum enim. Suspendisse finibus, quam dictum vestibulum tristique, nisi lectus luctus tellus, eget faucibus
             </p>
-            <img class="chamada__imagem" src="assets/img/planta-chamada.png" alt="Foto do produto">
-            <form action="#" class="chamada__formulario">
-                <input type="text" class="input input--icone input--email" placeholder="Insira seu e-mail" aria-label="Insira seu e-mail">
-                <button class="botao">Assinar newsletter</button>
-            </form>
+            <img src="assets/img/detalhe-produto-01.png" alt="Foto do produto" class="pagina-produto__imagem">
+            <button class="botao pagina-produto__botao" onclick="location.href='resumo.html'">Comprar agora</button>
+            <button class="botao pagina-produto__botao botao--alternativo pagina-produto__botao-adicionar">Adicionar ao carrinho</button>
         </section>
-        <section class="como-conseguir container">
-            <article class="cartao">
-                <h2 class="titulo alinhamento--meio">
-                    Como conseguir
-                    <span class="titulo--destaque">minha planta</span>
-                </h2>
-                <ul class="lista">
-                    <li class="item">
-                        <span class="item__icone item__icone--cursor"></span>
-                        <p>Escolha sua planta</p>
-                    </li>
-                    <li class="item">
-                        <span class="item__icone item__icone--carrinho"></span>
-                        <p>Faça seu pedido</p>
-                    </li>
-                    <li class="item">
-                        <span class="item__icone item__icone--caminhao"></span>
-                        <p>Aguarde na sua casa</p>
-                    </li>
-                </ul>
-            </article>
+        <section class="descricao container cartao">
+            <h3 class="titulo--destaque titulo--margin">Descrição do produto</h3>
+            <p class="texto">
+                Sed arcu risus, posuere viverra imperdiet eu, commodo interdum enim. Suspendisse finibus, quam dictum
+            </p>
+            <a href="#" class="descricao__link texto">Leia mais</a>
         </section>
         <section class="ofertas container">
-            <h2 class="titulo alinhamento--meio">
-                Conheça nossos
-                <span class="titulo--destaque">produtos</span>
+            <h2 class="texto titulo alinhamento--meio">
+                Conheça produtos
+                <span class="titulo--destaque titulo--margin">similares</span>
             </h2>
             <ul>
                 <li class="produto">
@@ -143,14 +121,6 @@
                         <h3 class="produto__titulo titulo--destaque">Ajuga reptans</h3>
                         <p class="produto__preco">R$ 20,00</p>
                         <a href="" class="produto__comprar">Comprar<span class="produto__comprar--icone"></span></a>
-                    </div>
-                </li>
-                <li class="produto">
-                    <img src="assets/img/produto-02.png" alt="Foto do produto" class="produto__imagem">
-                    <div class="produto__conteudo">
-                        <h3 class="produto__titulo titulo--destaque">Cordyline fruticosa</h3>
-                        <p class="produto__preco">R$ 20,00</p>
-                        <a href="produto.html" class="produto__comprar">Comprar<span class="produto__comprar--icone"></span></a>
                     </div>
                 </li>
                 <li class="produto">
@@ -177,43 +147,11 @@
                         <a href="" class="produto__comprar">Comprar<span class="produto__comprar--icone"></span></a>
                     </div>
                 </li>
-                <li class="produto">
-                    <img src="assets/img/produto-06.png" alt="Foto do produto" class="produto__imagem">
-                    <div class="produto__conteudo">
-                        <h3 class="produto__titulo titulo--destaque">Datura metel</h3>
-                        <p class="produto__preco">R$ 20,00</p>
-                        <a href="" class="produto__comprar">Comprar<span class="produto__comprar--icone"></span></a>
-                    </div>
-                </li>
             </ul>
         </section>
-        <section class="container">
-            <h2 class="titulo alinhamento--meio">
-                Veja aqui nossos
-                <span class="titulo--destaque">vídeos</span>
-            </h2>
-            <ul>
-                <li class="cartao-de-video container">
-                    <div class="cartao-de-video__video"><img src="https://picsum.photos/278/252" alt="Capa do vídeo"></div>
-                    <h3 class="cartao-de-video__titulo">Vídeo XYZ</h3>
-                    <p>Publicado em março de 2019</p>
-                </li>
-                <li class="cartao-de-video container">
-                    <div class="cartao-de-video__video"><img src="https://picsum.photos/278/252" alt="Capa do vídeo"></div>
-                    <h3 class="cartao-de-video__titulo">Vídeo XYZ</h3>
-                    <p>Publicado em março de 2019</p>
-                </li>
-                <li class="cartao-de-video container">
-                    <div class="cartao-de-video__video"><img src="https://picsum.photos/278/252" alt="Capa do vídeo"></div>
-                    <h3 class="cartao-de-video__titulo">Vídeo XYZ</h3>
-                    <p>Publicado em março de 2019</p>
-                </li>
-                <li class="cartao-de-video container">
-                    <div class="cartao-de-video__video"><img src="https://picsum.photos/278/252" alt="Capa do vídeo"></div>
-                    <h3 class="cartao-de-video__titulo">Vídeo XYZ</h3>
-                    <p>Publicado em março de 2019</p>
-                </li>
-            </ul>
+        <section class="snackbar">
+            <p class="snackbar__texto texto">Produto adicionado ao carrinho</p>
+            <a href="resumo.html" class="descricao__link descricao__link-snackbar">Ir para o pagamento</a>
         </section>
     </main>
     <footer class="container rodape">
@@ -236,6 +174,6 @@
             Telefone: (11) 99875-2201
         </address>
     </footer>
-    <script src="index.js"></script>
+    <script src="produto.js"></script>
 </body>
 </html>
